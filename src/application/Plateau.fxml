@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="806.0" prefWidth="398.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PlateauSceneController">
+   <children>
+      <Line endX="-35.0" endY="616.0" layoutX="369.0" layoutY="121.0" startX="-34.5858154296875" startY="-53.0" />
+      <Label fx:id="nom" layoutX="83.0" layoutY="148.0" text="Joueur: N/A">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="score" layoutX="82.0" layoutY="220.0" text="Score: N/A">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Button fx:id="suspendre" alignment="CENTER" layoutX="105.0" layoutY="352.0" mnemonicParsing="false" onAction="#suspendreButton" text="Suspendre la partie">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Line endX="-179.0" endY="-52.5" layoutX="244.0" layoutY="494.0" startX="88.29290771484375" startY="-52.5" />
+      <Button fx:id="lancer" alignment="CENTER" layoutX="111.0" layoutY="649.0" mnemonicParsing="false" onAction="#controler" text="Lancer les dés">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Label fx:id="currentCase" layoutX="84.0" layoutY="287.0" text="Case courante: N/A">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Button fx:id="jouerbutton" alignment="TOP_CENTER" defaultButton="true" layoutX="116.0" layoutY="90.0" mnemonicParsing="false" onAction="#controler" text="Jouer la partie" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Line endX="-179.0" endY="-52.5" layoutX="242.0" layoutY="790.0" startX="92.5" startY="-52.5" />
+      <Line endX="-179.0" endY="-52.5" layoutX="243.0" layoutY="119.0" startX="90.9141845703125" startY="-52.5" />
+      <ImageView fx:id="dice2" fitHeight="110.0" fitWidth="110.0" layoutX="203.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="dice1" fitHeight="110.0" fitWidth="110.0" layoutX="82.0" layoutY="483.0" pickOnBounds="true" preserveRatio="true" />
+      <Line endX="-35.0" endY="616.0" layoutX="98.0" layoutY="121.0" startX="-34.5858154296875" startY="-53.0" />
+      <ImageView fx:id="blankdice" fitHeight="177.0" fitWidth="141.0" layoutX="126.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
